@@ -98,6 +98,7 @@ user_file_list = {
 	'nvuser':		(False, 'files/nvuser.img'),
 	'perm':			(False, 'files/perm.img'),
 	'prdid':		(False, 'files/prdid.img'),
+	'modem':		(False, 'files/NON-HLOS.bin'),
 }
 
 for part in user_gpt_entires:
