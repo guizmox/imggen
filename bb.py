@@ -69,7 +69,7 @@ def hwid_to_product(hwid):
 	if hwid == 0x8d002c0a or hwid == 0x8e002c0a or hwid == 0x8f002c0a:
 		return "oslo"
 	if hwid == 0xaf00240a:
-		return "ontario"
+		return "mockingbird"
 	# keian ?
 	raise Exception("unknown hwid: " + utils.hex(hwid))
 
@@ -87,7 +87,7 @@ def hwid_to_variant(hwid):
 	if hwid == 0x8d002c0a or hwid == 0x8e002c0a or hwid == 0x8f002c0a: # SQW100-4
 		return "row"
 	if hwid == 0xaf00240a: # ontario/mockingbird
-		return "ontariovzw"
+		return "mockingbirdvzw"
 	raise Exception("unknown hwid: " + utils.hex(hwid))
 
 wolverine_na_table = {
