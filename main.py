@@ -114,6 +114,11 @@ for part in user_gpt_entires:
 
 		android_user = utils.buffer_write(android_user, gpt.lba_to_bytes(user_gpt_entires[part]['first_lba']), buf)
 
+		# Save separate partitions "files/user_<nom_partition>.img"
+        	filename = f"files/user_{part}.img"
+        	print(f"Saving separate partition: {filename}")
+        	utils.write_file(filename, buf)
+		
 print 'Saving new boot partition...'
 utils.write_file(sys.argv[3], android_boot)
 
